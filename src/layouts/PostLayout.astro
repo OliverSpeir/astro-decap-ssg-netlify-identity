@@ -1,0 +1,24 @@
+---
+import "@assets/styles/global.css";
+const { title, description, ogImage } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<meta property="og:image" content={ogImage.src} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<main>
+			<article class="prose">
+				<slot />
+			</article>
+		</main>
+	</body>
+</html>

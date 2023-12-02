@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex" />
+		<link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+		<title>Content Manager</title>
+	</head>
+	<body>
+		<!-- Dashboard script-->
+		<script src="https://unpkg.com/decap-cms@^3.1.0-beta.2/dist/decap-cms.js"></script>
+		<!-- netlify identity -->
+		<script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		<!-- CSS in preview panel -->
+		<script>
+			// @ts-expect-error CMS is defined globally
+			// eslint-disable-next-line
+			CMS.registerPreviewStyle("/global.css");
+		</script>
+		<!-- Only showing body in preview panel -->
+		<script src="@utils/preview.js"></script>
+	</body>
+</html>
