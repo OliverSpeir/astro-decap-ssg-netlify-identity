@@ -8,7 +8,7 @@
 		"build:tailwind": "tailwindcss -i src/assets/styles/global.css -o dist/global.css --minify",
 		"build:autoprefixer": "postcss dist/global.css -o dist/global.css",
 		"build": "astro build && pnpm run build:tailwind && pnpm run build:autoprefixer ",
-		"preview": "astro preview",
+		"preview": "decap-server & astro preview",
 		"astro": "astro",
 		"check": "astro check",
 		"sync": "astro sync"

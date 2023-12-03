@@ -12,6 +12,9 @@
 - SSG on Netlify
 - Git Gateway backend of Decap
 - Requires Netlify Identity
+- Local Backend works
+  - Preview styles and templates won't be applied in dev server, but the cms will work
+  - For actual use / local testing it's best to `pnpm run build && pnpm run preview`
 
 - Netlify Identity widget must be on root page ( is in `src/layouts/PageLayout.astro` but only needs to be on root page ) and `/admin`
 - The decap admin board is preconfigured with preview styles built from the tailwind of our project and to only show the body in the preview ( personal preference of mine can be removed by removing the scripts in `/pages/admin.astro`)
