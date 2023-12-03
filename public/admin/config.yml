@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: username/reponame
   branch: main
-
+local_backend: true
 media_folder: src/assets/img
 
 collections:

@@ -3,7 +3,7 @@
 	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "astro dev",
+		"dev": "decap-server & astro dev",
 		"start": "astro dev",
 		"build:tailwind": "tailwindcss -i src/assets/styles/global.css -o dist/global.css --minify",
 		"build:autoprefixer": "postcss dist/global.css -o dist/global.css",
@@ -22,6 +22,7 @@
 		"@tailwindcss/typography": "^0.5.10",
 		"@typescript-eslint/eslint-plugin": "^6.13.1",
 		"autoprefixer": "^10.4.16",
+		"decap-server": "^3.0.1",
 		"eslint": "^8.54.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-formatter-codeframe": "^7.32.1",
