@@ -9,6 +9,7 @@
 
 ## How it works
 
+- Remark plugin for fixing import for blog images ( decap adds the `/` )
 - SSG on Netlify
 - Git Gateway backend of Decap
 - Requires Netlify Identity
