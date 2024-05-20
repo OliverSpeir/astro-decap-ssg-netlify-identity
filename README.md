@@ -21,3 +21,7 @@
 - The decap admin board is preconfigured with preview styles built from the tailwind of our project and to only show the body in the preview ( personal preference of mine can be removed by removing the scripts in `/pages/admin.astro`)
 - Tailwind typography for styling the blogs
   - Personally not a fan but I figured it was easy to use and remove
+
+## Decap with oAuth Routes in Astro
+
+https://github.com/OliverSpeir/astro-decap-starter-ssr
